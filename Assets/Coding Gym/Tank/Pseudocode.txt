@@ -1,0 +1,29 @@
+// Initialize the Game
+Initialize Game
+Create Tank Object
+Create Bullet Prefab
+Create UI for settings (speed, appearance, bullet type, etc.)
+
+// Handle Player Input
+WHILE Game is Running
+    IF Left Arrow Key Pressed THEN
+        Move Tank Left
+    IF Right Arrow Key Pressed THEN
+        Move Tank Right
+
+    // Rotate the barrel to follow the mouse
+    Get Mouse Position
+    Rotate Tank Barrel to Face Mouse Position
+
+    // Handle Shooting
+    IF Mouse Click Detected THEN
+        Create Bullet at Tank Barrel Position
+        Set Bullet Direction Towards Barrel Rotation
+        Play Bullet Firing Sound
+
+    // Update UI Settings
+    IF UI Settings Changed THEN
+        Apply New Settings to Tank and Bullet
+
+    Update Game Frame
+END WHILE
